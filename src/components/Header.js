@@ -19,5 +19,6 @@ const Nav = Styled.div`
 `
 
 const Logo = styled.div`
+  
     
 `
