@@ -41,6 +41,7 @@ const Nav = Styled.div`
     display: flex;
     align-items: center;
     padding:0 35px;
+    overflow: hidden;
 
 `
 
@@ -83,14 +84,14 @@ const NavManu = Styled.div`
           left: 0;
           right: 0;
           bottom: -5px;
-          transform: left center center;
-          transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+          transform-origin: left center;
+          transition:all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
           opacity: 0;
-          tansfrom: scaleX(0);
+          transfrom: scaleX(0);
         }
     }
 
-    &:hover{
+    &:hover {
       span:after {
         opacity: 1;
         transform: scaleX(1);
