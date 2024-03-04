@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from 'react'
 import Styled, { styled } from 'styled-components'
 import ImgSlider from './ImgSlider'
