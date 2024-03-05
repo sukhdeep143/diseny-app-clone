@@ -3,12 +3,8 @@ import { Counter } from './features/counter/Counter';
 import './App.css';
 import Home from './components/Home';
 import Header from './components/Header';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+
 import Detail from './components/Detail';
 
 function App() {
@@ -16,14 +12,10 @@ function App() {
     <div className="App">
       <Router>
         <Header />
-        <Switch>
-          <Route path='detail'>
-            <Detail />
-          </Route>
-          <Route path='/'>
-            <Home />
-          </Route>
-        </Switch>
+        <Routes>
+          <Route path='detail' element={<Detail />} />
+          <Route path='/' element={<Home />} />
+        </Routes>
       </Router>
       
      
