@@ -10,7 +10,7 @@ function Movies() {
         <h4>You will like</h4>
         <Content>
             <Wrap>
-                <img src='/images/login-background.jpg' />
+                <img src='/images/dragon-ball-z-.jpg' />
             </Wrap>
             <Wrap>
                 <img src='/images/login-background.jpg' />
