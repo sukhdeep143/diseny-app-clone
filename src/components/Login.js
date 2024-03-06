@@ -6,6 +6,11 @@ function Login() {
     <Container>
         <LoginCatant>
             <LoginImageOne src="/images/cta-logo-one.svg" />
+            <SignUp>GET ALL THERE</SignUp>
+            <Description>
+                this is the Description fo the app, this is clone app not the real app so... i am sukhdeep singh   this is the Description fo the app, this is clone app not the real app so... i am sukhdeep singh 
+            </Description>
+            <LoginImageTwo src="/images/cta-logo-two.png" />
         </LoginCatant>
     </Container>
   )
@@ -17,13 +22,17 @@ const Container = styled.div`
     position: relative;
     height: calc(100vh - 70px
     );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 
     &:before{
         position: absolute;
         background-position: top;
         background-size:cover; 
         background-repeat: no-repeat;
-        content: '';
+        content: "";
         top: 0;
         left: 0;
         right: 0;
@@ -38,15 +47,41 @@ const Container = styled.div`
 const LoginCatant = styled.div`
     max-width: 650px;
     padding: 80px 40px;
-    width: 70%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
 `
 
-const LoginImageOne = styled.div`
-    height: 50%;
-    width: 70%;
-    z-index: 1;
-    img {
-        width: 100%;
-        height: 100%;
+const LoginImageOne = styled.img`
+    
+    
+`
+
+const SignUp = styled.a`
+    background-color: blue;
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 250ms;
+    letter-spacing: 1.5px;
+    margin-bottom: 12px;
+    margin-top: 10px;
+
+    &:hover{
+        background-color: lightblue;
+        color: black;
+        
     }
 `
+
+const Description = styled.p`
+    align-items: center;
+    line-height: 1.5;
+    text-align: center;
+    font-size: 12px;
+`
+
+const LoginImageTwo = styled.img``
