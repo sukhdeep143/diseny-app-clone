@@ -5,7 +5,7 @@ function Detail() {
   return (
     <Container>
         <Background>
-          <img src='/images/goku-vs-beerus.jpg' />
+          <img src='/images/move-z.jpg' />
         </Background>
         <ImageTitle>
           <img src='/images/dragon-ball-title.png' />
