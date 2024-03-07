@@ -32,7 +32,6 @@ function Detail() {
 
           <Description>
             kahhadoihfdoihfkdfnksdhfoiehfdnf;oehirohekfnsdhfsoifhodsf;ksdfhosdkfhiodshfoi,
-
             kahhadoihfdoihfkdfnksdhfoiksdfhosdkfhiodshfoikahhadoihfdoihfkdfnksdhf,
             oiehfdnf;oehirohekfnsdhfsoifhodsf;ksdfhosdkfhiodshfoik,
             ahhadoihfdoihfkdfnksdhfoiehfdnf;oehirohekfnsdhfsoifhodsf;ksdfhosdkfhiodshfoi

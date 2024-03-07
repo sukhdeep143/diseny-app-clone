@@ -1,12 +1,20 @@
 /* eslint-disable no-unused-vars */
-import React from 'react'
+import React, {useEffect} from 'react'
 import Styled, { styled } from 'styled-components'
 import ImgSlider from './ImgSlider'
 import Viewers from './Viewers'
 import Movies from './Movies'
-
+import db from '../firebase'
 
 function Home() {
+  useEffect(()=>{
+    db.colloection("movies").onSapshot((snapshort)=>{
+      let tempMoves = snapshort.docs.map((doc)=>{
+        return {id: doc.id, ...doc.data()}
+      })
+        console.log(tempMoves);
+    })
+  }, [])
   return (
     <Container>
         <ImgSlider />
