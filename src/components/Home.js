@@ -4,17 +4,17 @@ import Styled, { styled } from 'styled-components'
 import ImgSlider from './ImgSlider'
 import Viewers from './Viewers'
 import Movies from './Movies'
-import db from '../firebase'
+// import db from './src/firebase'
 
 function Home() {
-  useEffect(()=>{
-    db.colloection("movies").onSapshot((snapshort)=>{
-      let tempMoves = snapshort.docs.map((doc)=>{
-        return {id: doc.id, ...doc.data()}
-      })
-        console.log(tempMoves);
-    })
-  }, [])
+  // useEffect(()=>{
+  //   db.colloection("movies").onSapshot((snapshort)=>{
+  //     let tempMoves = snapshort.docs.map((doc)=>{
+  //       return {id: doc.id, ...doc.data()}
+  //     })
+  //       console.log(tempMoves);
+  //   })
+  // }, [])
   return (
     <Container>
         <ImgSlider />
