@@ -10,12 +10,12 @@ function Movies() {
         
         <h4>You will like</h4>
         <Content>
-            <Link to="/Detail">
 
                 <Wrap>
+            <Link to="/Detail">
                     <img src='/images/dragon-ball-z-.jpg' />
-                </Wrap>
             </Link>
+                </Wrap>
             <Link to="/Detail">
             <Wrap>
                 <img src='/images/login-background.jpg' />
@@ -39,6 +39,7 @@ function Movies() {
 export default Movies
 
 const Container = styled.div`
+    height: 50vh;
 
 `
 
