@@ -1,16 +1,22 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 function Login() {
   return (
     <Container>
         <LoginCatant>
             <LoginImageOne src="/images/cta-logo-one.svg" />
-            <SignUp>GET ALL THERE</SignUp>
+             <SignUp>
+            <Link to="/">
+            
+                LOGIN   
+            </Link>
+                </SignUp>
             <Description>
                 this is the Description fo the app, this is clone app not the real app so... i am sukhdeep singh   this is the Description fo the app, this is clone app not the real app so... i am sukhdeep singh 
             </Description>
-            <LoginImageTwo src="/images/cta-logo-two.png" />
+                <LoginImageTwo src="/images/cta-logo-two.png" />
         </LoginCatant>
     </Container>
   )
@@ -57,6 +63,7 @@ const LoginImageOne = styled.img`
     
 `
 
+
 const SignUp = styled.a`
     background-color: blue;
     padding: 20px 0;
@@ -69,6 +76,12 @@ const SignUp = styled.a`
     letter-spacing: 1.5px;
     margin-bottom: 12px;
     margin-top: 10px;
+    
+    Link{
+    color: white;
+
+    }
+
 
     &:hover{
         background-color: lightblue;

@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from 'react'
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 
 function Movies() {
@@ -9,18 +10,27 @@ function Movies() {
         
         <h4>You will like</h4>
         <Content>
-            <Wrap>
-                <img src='/images/dragon-ball-z-.jpg' />
-            </Wrap>
-            <Wrap>
-                <img src='/images/login-background.jpg' />
-            </Wrap>
-            <Wrap>
-                <img src='/images/login-background.jpg' />
-            </Wrap>
+            <Link to="/Detail">
+
+                <Wrap>
+                    <img src='/images/dragon-ball-z-.jpg' />
+                </Wrap>
+            </Link>
+            <Link to="/Detail">
             <Wrap>
                 <img src='/images/login-background.jpg' />
             </Wrap>
+            </Link>
+            <Link to="/Detail">
+            <Wrap>
+                <img src='/images/login-background.jpg' />
+            </Wrap>
+            </Link>
+            <Link to="/Detail">
+            <Wrap>
+                <img src='/images/login-background.jpg' />
+            </Wrap>
+            </Link>
         </Content>
     </Container>
   )
