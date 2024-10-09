@@ -2,6 +2,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from 'react'
 import Styled, { styled } from 'styled-components'
+import { Link } from 'react-router-dom'
 
 function Header() {
   return (
@@ -29,7 +30,9 @@ function Header() {
             <span>SERIES</span>
           </a>
         </NavManu>
+        <Link to="/Login">
         <UserImg src="/images/mani.png" />
+        </Link>
     </Nav>
   )
 }
